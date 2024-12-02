@@ -72,4 +72,15 @@ function showRating(rating) {
 }
 console.log(sortHighToLow([{ id: 1, price: 20}, {id: 2, price: 40}, {id: 3, price: 30}]));
 
+// Promises and API
+// 4. Find all the posts by a single user
+// Call this API "https://jsonplaceholder.typicode.com/posts" and return all the posts by any given user Id
+async function postsByUser(userId) {
+    const promise = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const result = await promise.json();
+    const posts = result.filter(element => element.userId === userId);
+    console.log(posts);
+}
+postsByUser(4);
+
 
