@@ -64,3 +64,12 @@ function showRating(rating) {
        return arr.sort((a, b) => a - b);
   }
   console.log(sortLowToHigh([20, 40, 10, 30, 50, 10]));
+
+  // 3.Sort by highest to lowest price
+  // Given an array of objects, return the prices sorted by high to low
+  function sortHighToLow(numbers) {
+    return numbers.sort((a, b) => b.price - a.price);
+}
+console.log(sortHighToLow([{ id: 1, price: 20}, {id: 2, price: 40}, {id: 3, price: 30}]));
+
+
