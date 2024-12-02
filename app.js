@@ -56,3 +56,11 @@ function showRating(rating) {
     return ratings;
   }
   console.log(showRating(4.5));
+
+
+  // 2.Sort by lowest to highest price
+  // Given an array of numbers, return the prices sorted by low to high.
+  function sortLowToHigh(arr) {
+       return arr.sort((a, b) => a - b);
+  }
+  console.log(sortLowToHigh([20, 40, 10, 30, 50, 10]));
